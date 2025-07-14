@@ -8,19 +8,20 @@ server:
     accept-count: 10
 
 # 微信公众号对接
-#weixin:
-#  config:
-#    originalid: gh_e067c267e056
-#    token: b8b6
-#    app-id: wx5a228ff69e28a91f
-#    app-secret: 0bea03aa1310bac050aae79dd8703928
-#    template_id: RbEZ2jo47dQmF4A7_Ku7RsDy1x_5by6bk1Ox6rPCl4Y
+weixin:
+  config:
+    originalid: gh_eb6ab9650716
+    token: Z2ee
+    app-id: wxd91381e783d5210f
+    app-secret: cc8acd5e2a1477f8859362283efa646f
+    template_id: vjK_0l4tTQP6oA7xJ74iJc0TEsXcXpm3Jvp29j8FGU8
 
 spring:
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/s-pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+    password: Zqw155114
+    url: jdbc:mysql://localhost:3306/pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+#    url: jdbc:mysql://117.72.220.242:13306/pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialSize: 5
     minIdle: 5
@@ -35,9 +36,9 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat
 
-mybatis:
-  mapper-locations: classpath:/mybatis/mapper/*.xml
-  config-location:  classpath:/mybatis/config/mybatis-config.xml
+#mybatis:
+#  mapper-locations: classpath:/mybatis/mapper/*.xml
+#  config-location:  classpath:/mybatis/config/mybatis-config.xml
 
 # 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
 #alipay:

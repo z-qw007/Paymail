@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/pay-mail-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-mail-dao/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-mail-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-mail-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-mail-domain/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-mail-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-mail-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-mail-web/src/main/java" charset="UTF-8" />
