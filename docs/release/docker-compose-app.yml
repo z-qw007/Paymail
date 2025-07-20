@@ -22,9 +22,9 @@ services:
       - my-network
 
   # 部署后端项目
-  s-pay-mall:
-    image: fuzhengwei/s-pay-mall-mvc-app:1.0
-    container_name: s-pay-mall
+  s-pay-mail:
+    image: fuzhengwei/s-pay-mail-mvc-app:1.0
+    container_name: s-pay-mail
     restart: on-failure
     ports:
       - "8080:8080"

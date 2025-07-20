@@ -1,9 +1,6 @@
-package com.zqw.domain.po;
+package com.zqw.domain.vo;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;

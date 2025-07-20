@@ -1,7 +1,7 @@
 package com.zqw.service.impl;
 
 import com.google.common.cache.Cache;
-import com.zqw.domain.po.WeixinTemplateMessageVO;
+import com.zqw.domain.vo.WeixinTemplateMessageVO;
 import com.zqw.domain.req.WeixinQrCodeReq;
 import com.zqw.domain.res.WeixinQrCodeRes;
 import com.zqw.domain.res.WeixinTokens;

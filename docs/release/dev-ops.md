@@ -11,7 +11,7 @@
 ## 二、执行脚本
 
 ```java
-git clone -b docker-images-v1.0 https://gitcode.net/KnowledgePlanet/s-pay-mall/s-pay-mall-mvc.git
+git clone -b docker-images-v1.0 https://gitcode.net/KnowledgePlanet/s-pay-mail/s-pay-mail-mvc.git
 
 mvn clean install
 

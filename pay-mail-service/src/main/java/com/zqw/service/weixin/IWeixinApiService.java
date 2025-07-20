@@ -1,6 +1,6 @@
 package com.zqw.service.weixin;
 
-import com.zqw.domain.po.WeixinTemplateMessageVO;
+import com.zqw.domain.vo.WeixinTemplateMessageVO;
 import com.zqw.domain.res.WeixinQrCodeRes;
 import com.zqw.domain.res.WeixinTokens;
 import com.zqw.domain.req.WeixinQrCodeReq;

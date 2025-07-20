@@ -19,9 +19,9 @@ weixin:
 spring:
   datasource:
     username: root
-    password: Zqw155114
-    url: jdbc:mysql://localhost:3306/pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
-#    url: jdbc:mysql://117.72.220.242:13306/pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+    password: 123456
+    url: jdbc:mysql://117.72.220.242:13306/pay-mail?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+#    url: jdbc:mysql://117.72.220.242:13306/pay-mail?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialSize: 5
     minIdle: 5
@@ -36,9 +36,9 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat
 
-#mybatis:
-#  mapper-locations: classpath:/mybatis/mapper/*.xml
-#  config-location:  classpath:/mybatis/config/mybatis-config.xml
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
 
 # 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
 #alipay:

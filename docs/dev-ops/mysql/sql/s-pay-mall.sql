@@ -1,16 +1,3 @@
-# ************************************************************
-# Sequel Ace SQL dump
-# 版本号： 20050
-#
-# https://sequel-ace.com/
-# https://github.com/Sequel-Ace/Sequel-Ace
-#
-# 主机: 127.0.0.1 (MySQL 8.0.32)
-# 数据库: xfg-dev-tech-alipay-sandbox
-# 生成时间: 2023-12-13 12:02:08 +0000
-# ************************************************************
-
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -19,8 +6,8 @@ SET NAMES utf8mb4;
 /*!40101 SET @OLD_SQL_MODE='NO_AUTO_VALUE_ON_ZERO', SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-CREATE database if NOT EXISTS `s-pay-mall` default character set utf8mb4 ;
-use `s-pay-mall`;
+CREATE database if NOT EXISTS `pay-mail` default character set utf8mb4 ;
+use `pay-mail`;
 
 # 转储表 pay_order
 # ------------------------------------------------------------
