@@ -4,23 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148da947-6e19-4e91-aa5a-7d3b6476b7b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/natapp/natapp.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/weixin/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/weixin/MessageTextEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/weixin/SignatureUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/weixin/XmlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/controller/WeixinPortalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/natapp/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/natapp/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/natapp/natapp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-web/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/src/main/resources/application-dev.yml" afterDir="false" />
+    <list default="true" id="148da947-6e19-4e91-aa5a-7d3b6476b7b1" name="Changes" comment="微信公众号鉴权">
+      <change afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/log/log-error-2025-07-14.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/log/log-info-2025-07-14.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-common/src/main/java/com/zqw/common/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/po/WeixinTemplateMessageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/req/WeixinQrCodeReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/res/WeixinQrCodeRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/res/WeixinTokens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/ILoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/impl/WeixinLoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/weixin/IWeixinApiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/config/GuavaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/config/Retrofit2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/listener/OrderPaySuccessListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/46ad4e6a-444d-467d-a244-c3fe0c1ceae8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/46ad4e6a-444d-467d-a244-c3fe0c1ceae8/storage_v2/_src_/schema/pay-mail.vJ_nTg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6e9c920e-ffbb-4bd1-8096-5ba6a74d9855.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6e9c920e-ffbb-4bd1-8096-5ba6a74d9855.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -61,25 +73,30 @@
     &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PayMail/pay-mail-mvc&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PayMail/pay-mail-mvc/pay-mail-domain/src/main/java/com/zqw/domain&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PayMail\pay-mail-mvc\pay-mail-domain\src\main\java\com\zqw\domain" />
       <recent name="D:\PayMail\pay-mail-mvc\pay-mail-common\src\main\java\com\zqw\common\weixin" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zqw.listener" />
+      <recent name="com.zqw.config" />
       <recent name="com.zqw.controller" />
     </key>
   </component>
@@ -110,14 +127,71 @@
       <workItem from="1752447432018" duration="4051000" />
       <workItem from="1752454241820" duration="23000" />
       <workItem from="1752471373188" duration="98000" />
-      <workItem from="1752472358436" duration="381000" />
+      <workItem from="1752472358436" duration="560000" />
+      <workItem from="1752531907395" duration="4042000" />
+      <workItem from="1752540556104" duration="5000" />
+      <workItem from="1752540573019" duration="41000" />
+      <workItem from="1752540629827" duration="17000" />
+      <workItem from="1752616847101" duration="7899000" />
+      <workItem from="1752627865198" duration="7000" />
     </task>
+    <task id="LOCAL-00001" summary="微信公众号鉴权">
+      <option name="closed" value="true" />
+      <created>1752472897183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752472897183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="f5a5ef6e-4ea3-4862-be5d-eb4c4744bd42" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="f5a5ef6e-4ea3-4862-be5d-eb4c4744bd42">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="初始化" />
+    <MESSAGE value="微信公众号鉴权" />
+    <option name="LAST_COMMIT_MESSAGE" value="微信公众号鉴权" />
   </component>
 </project>
