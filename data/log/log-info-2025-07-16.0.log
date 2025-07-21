@@ -1,0 +1,89 @@
+25-07-16.07:58:57.650 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 28792 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-16.07:58:57.652 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-16.07:58:58.173 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.07:58:58.506 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-16.07:58:58.512 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-16.07:58:58.513 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-16.07:58:58.513 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-16.07:58:58.638 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-16.07:58:58.638 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
+25-07-16.07:58:58.679 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zqw.service.ILoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+25-07-16.07:58:58.681 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-07-16.07:58:58.692 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-07-16.07:58:58.713 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zqw.service.ILoginService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zqw.service.ILoginService' in your configuration.
+
+25-07-16.08:00:59.456 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 25400 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-16.08:00:59.458 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-16.08:00:59.907 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.08:01:00.157 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-16.08:01:00.162 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-16.08:01:00.162 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-16.08:01:00.162 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-16.08:01:00.264 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-16.08:01:00.264 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 772 ms
+25-07-16.08:01:01.078 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-16.08:01:01.091 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-16.08:01:01.097 [main            ] INFO  Application            - Started Application in 2.009 seconds (JVM running for 2.785)
+25-07-16.08:03:07.008 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 30568 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-16.08:03:07.011 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-16.08:03:07.402 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.08:03:07.640 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-16.08:03:07.645 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-16.08:03:07.645 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-16.08:03:07.645 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-16.08:03:07.748 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-16.08:03:07.748 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 711 ms
+25-07-16.08:03:08.534 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-16.08:03:08.545 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-16.08:03:08.552 [main            ] INFO  Application            - Started Application in 1.895 seconds (JVM running for 2.664)
+25-07-16.08:03:13.204 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-16.08:03:13.204 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-16.08:03:13.205 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-16.08:03:14.338 [http-nio-8080-exec-1] INFO  LoginController        - 二维码ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA
+25-07-16.08:05:46.127 [http-nio-8080-exec-3] INFO  LoginController        - 扫码检测登录结果 ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA openidToken:null
+25-07-16.08:05:49.023 [http-nio-8080-exec-4] INFO  LoginController        - 扫码检测登录结果 ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA openidToken:null
+25-07-16.08:05:58.071 [http-nio-8080-exec-8] INFO  LoginController        - 扫码检测登录结果 ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA openidToken:null
+25-07-16.08:06:09.825 [http-nio-8080-exec-6] INFO  LoginController        - 扫码检测登录结果 ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA openidToken:null
+25-07-16.08:06:11.331 [http-nio-8080-exec-7] INFO  LoginController        - 扫码检测登录结果 ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA openidToken:null
+25-07-16.08:06:12.160 [http-nio-8080-exec-5] INFO  LoginController        - 扫码检测登录结果 ticket:gQGy7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWlljbVpFOG9jS0cxaHc4VDFFMTAAAgRA7HZoAwQgHAAA openidToken:null
+25-07-16.08:08:50.824 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 29288 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-16.08:08:50.827 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-16.08:08:51.230 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.08:08:51.468 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-16.08:08:51.474 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-16.08:08:51.474 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-16.08:08:51.474 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-16.08:08:51.577 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-16.08:08:51.578 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 725 ms
+25-07-16.08:08:52.354 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-16.08:08:52.367 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-16.08:08:52.376 [main            ] INFO  Application            - Started Application in 1.873 seconds (JVM running for 2.592)
+25-07-16.08:08:57.781 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-16.08:08:57.781 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-16.08:08:57.782 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-16.08:08:58.522 [http-nio-8080-exec-1] INFO  LoginController        - 二维码ticket:gQF48DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyekRMQ1o2OG9jS0cxaVY5VDFFMXQAAgSZ7XZoAwQgHAAA
+25-07-16.08:09:09.108 [http-nio-8080-exec-2] INFO  LoginController        - 扫码检测登录结果 ticket:gQF48DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyekRMQ1o2OG9jS0cxaVY5VDFFMXQAAgSZ7XZoAwQgHAAA openidToken:null
+25-07-16.08:09:15.759 [http-nio-8080-exec-3] INFO  LoginController        - 扫码检测登录结果 ticket:gQF48DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyekRMQ1o2OG9jS0cxaVY5VDFFMXQAAgSZ7XZoAwQgHAAA openidToken:null
+25-07-16.08:12:16.261 [http-nio-8080-exec-8] INFO  WeixinPortalController - 接收微信公众号信息请求oyNgu6jMqdxuDamutOvWWKPecQpQ开始 <xml><ToUserName><![CDATA[gh_eb6ab9650716]]></ToUserName>
+<FromUserName><![CDATA[oyNgu6jMqdxuDamutOvWWKPecQpQ]]></FromUserName>
+<CreateTime>1752624734</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[123]]></EventKey>
+<Ticket><![CDATA[gQF48DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyekRMQ1o2OG9jS0cxaVY5VDFFMXQAAgSZ7XZoAwQgHAAA]]></Ticket>
+</xml>
