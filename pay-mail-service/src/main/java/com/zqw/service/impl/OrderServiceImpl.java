@@ -1,5 +1,8 @@
 package com.zqw.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
+import com.alipay.api.AlipayClient;
+import com.alipay.api.request.AlipayTradePayRequest;
 import com.zqw.common.constants.Constants;
 import com.zqw.dao.IOrderDao;
 import com.zqw.domain.po.PayOrder;
@@ -11,20 +14,30 @@ import com.zqw.service.rpc.ProductRPC;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Slf4j
 @Service
 public class OrderServiceImpl implements IOrderService {
 
+    @Value("${alipay.notify_url}")
+    private String notifyUrl;
+    @Value("${alipay.return_url}")
+    private String returnUrl;
+
     @Resource
     private IOrderDao orderDao;
 
     @Resource
     private ProductRPC productRPC;
+
+    @Resource
+    private AlipayClient alipayClient;
 
     @Override
     public PayOrderRes createOrder(ShopCartReq shopCartReq) throws Exception {
@@ -40,6 +53,12 @@ public class OrderServiceImpl implements IOrderService {
             return PayOrderRes.builder()
                     .orderId(unPaidOrder.getOrderId())
                     .build();
+        } else if (unPaidOrder != null && Constants.OrderStatusEnum.CREATE.getCode().equals(unPaidOrder.getStatus())) {
+            PayOrder payOrder = doPrePayOrder(unPaidOrder.getProductId(), unPaidOrder.getProductName(), unPaidOrder.getOrderId(), unPaidOrder.getTotalAmount());
+            return PayOrderRes.builder()
+                    .orderId(payOrder.getOrderId())
+                    .payUrl(payOrder.getPayUrl())
+                    .build();
         }
         //2. 查询商品， 创建订单
         ProductVO productVO = productRPC.queryProductByProductId(shopCartReq.getProductId());
@@ -53,11 +72,37 @@ public class OrderServiceImpl implements IOrderService {
                         .totalAmount(productVO.getPrice())
                         .status(Constants.OrderStatusEnum.CREATE.getCode())
                         .build());
-
+        PayOrder payOrder = doPrePayOrder(unPaidOrder.getProductId(), unPaidOrder.getProductName(), unPaidOrder.getOrderId(), unPaidOrder.getTotalAmount());
         //3. 创建支付订单
         return PayOrderRes.builder()
                 .orderId(orderId)
-                .payUrl("null")
+                .payUrl(payOrder.getPayUrl())
                 .build();
+    }
+
+    private PayOrder doPrePayOrder(String productId, String productName,
+                                   String orderId, BigDecimal totalAmount) throws Exception {
+        AlipayTradePayRequest request = new AlipayTradePayRequest();
+        request.setNotifyUrl(notifyUrl);
+        request.setReturnUrl(returnUrl);
+
+        JSONObject content = new JSONObject();
+        content.put("out_trade_no", orderId);
+        content.put("total_amount", totalAmount);
+        content.put("subject", productName);
+        content.put("product_code", "FAST_INSTANT_TRADE_PAY");
+
+        request.setBizContent(content.toJSONString());
+
+        String body = alipayClient.pageExecute(request).getBody();
+
+        PayOrder payOrder = new PayOrder();
+        payOrder.setOrderId(orderId);
+        payOrder.setPayUrl(body);
+        payOrder.setStatus(Constants.OrderStatusEnum.PAY_WAIT.getCode());
+
+        orderDao.updateOrderPayInfo(payOrder);
+
+        return payOrder;
     }
 }

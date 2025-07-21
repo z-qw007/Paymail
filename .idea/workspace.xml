@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148da947-6e19-4e91-aa5a-7d3b6476b7b1" name="Changes" comment="微信扫码登录">
-      <change afterPath="$PROJECT_DIR$/pay-mail-dao/src/main/java/com/zqw/dao/IOrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/po/PayOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/req/ShopCartReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/res/PayOrderRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/vo/ProductVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/IOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/rpc/ProductRPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/resources/mybatis/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/resources/mybatis/mapper/pay_order_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/test/java/com/zqw/test/service/OrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/s-pay-mall.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/s-pay-mall.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/po/WeixinTemplateMessageVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-domain/src/main/java/com/zqw/domain/vo/WeixinTemplateMessageVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/impl/WeixinLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/impl/WeixinLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/weixin/IWeixinApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/weixin/IWeixinApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-mail-web/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/src/main/resources/application-dev.yml" afterDir="false" />
-    </list>
+    <list default="true" id="148da947-6e19-4e91-aa5a-7d3b6476b7b1" name="Changes" comment="商品下单" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
@@ -78,7 +56,6 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -162,7 +139,7 @@
       <workItem from="1752540629827" duration="17000" />
       <workItem from="1752616847101" duration="7899000" />
       <workItem from="1752627865198" duration="7000" />
-      <workItem from="1753050298616" duration="5279000" />
+      <workItem from="1753050298616" duration="5629000" />
     </task>
     <task id="LOCAL-00001" summary="微信公众号鉴权">
       <option name="closed" value="true" />
@@ -180,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753050365639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="商品下单">
+      <option name="closed" value="true" />
+      <created>1753055791713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753055791713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +215,7 @@
     <MESSAGE value="初始化" />
     <MESSAGE value="微信公众号鉴权" />
     <MESSAGE value="微信扫码登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="微信扫码登录" />
+    <MESSAGE value="商品下单" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品下单" />
   </component>
 </project>
