@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148da947-6e19-4e91-aa5a-7d3b6476b7b1" name="Changes" comment="对接支付" />
+    <list default="true" id="148da947-6e19-4e91-aa5a-7d3b6476b7b1" name="Changes" comment="对接支付">
+      <change afterPath="$PROJECT_DIR$/data/log/log-error-2025-07-16.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/log/log-error-2025-07-22.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/log/log-info-2025-07-22.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/job/NoPayNotifyOrderJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/job/TimeoutCloseOrderJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log-error-2025-07-14.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-mail-dao/src/main/java/com/zqw/dao/IOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-dao/src/main/java/com/zqw/dao/IOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-service/src/main/java/com/zqw/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/controller/AliPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/controller/AliPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/listener/OrderPaySuccessListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/src/main/java/com/zqw/listener/OrderPaySuccessListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-mail-web/src/main/resources/mybatis/mapper/pay_order_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-mail-web/src/main/resources/mybatis/mapper/pay_order_mapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,10 +72,10 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
+    "Spring Boot.Application.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/PayMail/instance/s-pay-mall-mvc",
+    "last_opened_file_path": "D:/yx_code",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +102,7 @@
       <recent name="D:\PayMail\pay-mail-mvc\pay-mail-web\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zqw.job" />
       <recent name="com.zqw.listener" />
       <recent name="com.zqw.config" />
       <recent name="com.zqw.controller" />
@@ -140,7 +157,10 @@
       <workItem from="1752616847101" duration="7899000" />
       <workItem from="1752627865198" duration="7000" />
       <workItem from="1753050298616" duration="5629000" />
-      <workItem from="1753135849569" duration="4323000" />
+      <workItem from="1753135849569" duration="6226000" />
+      <workItem from="1753161351660" duration="1657000" />
+      <workItem from="1753222172394" duration="3248000" />
+      <workItem from="1753232115823" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="微信公众号鉴权">
       <option name="closed" value="true" />
@@ -174,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753140179629</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="对接支付">
+      <option name="closed" value="true" />
+      <created>1753140971592</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753140971592</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

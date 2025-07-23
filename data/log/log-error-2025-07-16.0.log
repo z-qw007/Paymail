@@ -1,0 +1,20 @@
+25-07-16.07:58:58.173 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.07:58:58.679 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zqw.service.ILoginService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+25-07-16.07:58:58.713 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zqw.service.ILoginService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zqw.service.ILoginService' in your configuration.
+
+25-07-16.08:00:59.907 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.08:03:07.402 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.
+25-07-16.08:08:51.230 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.zqw]' package. Please check your configuration.

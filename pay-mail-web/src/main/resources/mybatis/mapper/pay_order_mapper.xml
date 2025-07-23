@@ -36,4 +36,27 @@
             limit 1
     </select>
 
+    <select id="queryNoPayNotifyOrder" resultType="java.lang.String">
+        SELECT order_id as orderId FROM pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >= order_time + INTERVAL 1 MINUTE
+        ORDER BY id ASC
+            LIMIT 10
+    </select>
+    <select id="queryTimeoutCloseOrderList" resultType="java.lang.String">
+        SELECT order_id as orderId FROM pay_order
+        WHERE status = 'PAY_WAIT' AND NOW() >= order_time + INTERVAL 30 MINUTE
+        ORDER BY id ASC
+            LIMIT 50
+    </select>
+
+    <update id="changeOrderPaySuccess" parameterType="com.zqw.domain.po.PayOrder">
+        update pay_order set status = #{status}, pay_time = now(), update_time = now()
+        where order_id = #{orderId}
+    </update>
+
+    <update id="changeOrderClose" parameterType="java.lang.String">
+        update pay_order set status = 'CLOSE', pay_time = now(), update_time = now()
+        where order_id = #{orderId}
+    </update>
+
 </mapper>

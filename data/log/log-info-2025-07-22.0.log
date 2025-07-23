@@ -1,0 +1,139 @@
+25-07-22.07:23:29.109 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 6176 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:23:29.111 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:23:29.829 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:23:29.835 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:23:29.835 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:23:29.835 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:23:29.942 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:23:29.943 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 792 ms
+25-07-22.07:23:30.766 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:23:30.781 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:23:30.790 [main            ] INFO  Application            - Started Application in 2.03 seconds (JVM running for 2.751)
+25-07-22.07:36:50.078 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 15272 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:36:50.081 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:36:51.092 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:36:51.101 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:36:51.102 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:36:51.102 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:36:51.272 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:36:51.272 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1149 ms
+25-07-22.07:36:52.363 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:36:52.378 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:36:52.390 [main            ] INFO  Application            - Started Application in 2.894 seconds (JVM running for 3.876)
+25-07-22.07:37:19.522 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 27208 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:37:19.524 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:37:20.260 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:37:20.265 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:37:20.266 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:37:20.266 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:37:20.373 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:37:20.373 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 812 ms
+25-07-22.07:37:21.253 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:37:21.265 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:37:21.274 [main            ] INFO  Application            - Started Application in 2.124 seconds (JVM running for 2.952)
+25-07-22.07:38:40.896 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.07:38:40.896 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.07:38:40.896 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-07-22.07:38:40.911 [http-nio-8080-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-22.07:38:49.524 [http-nio-8080-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.zqw.common.response.Response<java.lang.String> com.zqw.controller.AliPayController.createPayOrder(com.zqw.controller.dto.CreatePayRequestDTO)]
+25-07-22.07:39:36.224 [http-nio-8080-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('p' (code 112)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('p' (code 112)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 6]]
+25-07-22.07:40:13.649 [http-nio-8080-exec-4] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.07:40:17.152 [http-nio-8080-exec-4] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.07:41:38.849 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.07:41:38.875 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.07:41:41.870 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 15136 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:41:41.872 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:41:42.778 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:41:42.785 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:41:42.785 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:41:42.785 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:41:42.915 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:41:42.915 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1010 ms
+25-07-22.07:41:43.895 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:41:43.910 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:41:43.921 [main            ] INFO  Application            - Started Application in 2.492 seconds (JVM running for 3.702)
+25-07-22.07:41:50.101 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.07:41:50.101 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.07:41:50.102 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-22.07:42:04.958 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.07:42:06.398 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.07:43:43.509 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m36s999ms925µs900ns).
+25-07-22.07:45:23.212 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.07:45:23.221 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.07:46:32.932 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 27372 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:46:32.935 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:46:33.629 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:46:33.635 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:46:33.636 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:46:33.636 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:46:33.738 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:46:33.738 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 767 ms
+25-07-22.07:46:34.661 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:46:34.676 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:46:34.686 [main            ] INFO  Application            - Started Application in 2.154 seconds (JVM running for 2.838)
+25-07-22.07:46:38.437 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.07:46:38.437 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.07:46:38.440 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-07-22.07:46:38.534 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.07:46:39.001 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.07:46:39.052 [http-nio-8080-exec-1] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:zqw productId:1111 orderId:8863948866
+25-07-22.07:49:01.873 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.07:49:01.884 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.07:49:06.158 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 25944 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:49:06.161 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:49:06.826 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:49:06.831 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:49:06.832 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:49:06.832 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:49:06.931 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:49:06.931 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 739 ms
+25-07-22.07:49:07.760 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:49:07.772 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:49:07.780 [main            ] INFO  Application            - Started Application in 1.965 seconds (JVM running for 2.621)
+25-07-22.07:49:10.753 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.07:49:10.753 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.07:49:10.754 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-22.07:49:10.826 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.07:49:11.305 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.07:49:11.359 [http-nio-8080-exec-1] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:zqw productId:1111 orderId:8863948866
+25-07-22.07:52:42.747 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.07:52:42.758 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.07:52:47.739 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 26016 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:52:47.742 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:52:48.563 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:52:48.570 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:52:48.571 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:52:48.571 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:52:48.686 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:52:48.686 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 905 ms
+25-07-22.07:52:49.652 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:52:49.678 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:52:49.687 [main            ] INFO  Application            - Started Application in 2.447 seconds (JVM running for 3.303)
+25-07-22.07:52:53.679 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.07:52:53.680 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.07:52:53.680 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-07-22.07:52:53.770 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.07:52:54.254 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.07:52:54.310 [http-nio-8080-exec-1] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:zqw productId:1111 orderId:8863948866
+25-07-22.07:53:41.275 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s906ms943µs600ns).
+25-07-22.07:54:03.959 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.07:54:03.969 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-22.07:54:06.426 [main            ] INFO  Application            - Starting Application using Java 1.8.0_321 on MRZ with PID 22972 (D:\PayMail\pay-mail-mvc\pay-mail-web\target\classes started by zhang in D:\PayMail\pay-mail-mvc)
+25-07-22.07:54:06.428 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-22.07:54:07.207 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+25-07-22.07:54:07.212 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+25-07-22.07:54:07.213 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-22.07:54:07.213 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-22.07:54:07.330 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-22.07:54:07.330 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 866 ms
+25-07-22.07:54:08.258 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+25-07-22.07:54:08.274 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+25-07-22.07:54:08.284 [main            ] INFO  Application            - Started Application in 2.303 seconds (JVM running for 3.099)
+25-07-22.07:54:11.642 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-22.07:54:11.642 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-22.07:54:11.643 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-22.07:54:11.735 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-22.07:54:12.250 [http-nio-8080-exec-1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-22.07:54:12.309 [http-nio-8080-exec-1] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:zhangsan productId:111 orderId:3792499789
+25-07-22.07:55:00.788 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-22.07:55:00.798 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

@@ -1,8 +1,11 @@
 package com.zqw.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson2.JSON;
 import com.alipay.api.AlipayClient;
+import com.alipay.api.AlipayConfig;
 import com.alipay.api.request.AlipayTradePayRequest;
+import com.google.common.eventbus.EventBus;
 import com.zqw.common.constants.Constants;
 import com.zqw.dao.IOrderDao;
 import com.zqw.domain.po.PayOrder;
@@ -19,7 +22,9 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.Collections;
 import java.util.Date;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -38,6 +43,9 @@ public class OrderServiceImpl implements IOrderService {
 
     @Resource
     private AlipayClient alipayClient;
+
+    @Resource
+    private EventBus eventBus;
 
     @Override
     public PayOrderRes createOrder(ShopCartReq shopCartReq) throws Exception {
@@ -78,6 +86,36 @@ public class OrderServiceImpl implements IOrderService {
                 .orderId(orderId)
                 .payUrl(payOrder.getPayUrl())
                 .build();
+    }
+
+    @Override
+    public void changeOrderPaySuccess(String orderId) {
+        // Create a new PayOrder object
+        PayOrder payOrder = new PayOrder();
+        // Set the orderId of the PayOrder object
+        payOrder.setOrderId(orderId);
+        // Set the status of the PayOrder object to PAY_SUCCESS
+        payOrder.setStatus(Constants.OrderStatusEnum.PAY_SUCCESS.getCode());
+        // Call the changeOrderPaySuccess method of the orderDao object to update the order status
+        orderDao.changeOrderPaySuccess(payOrder);
+
+        // Post the PayOrder object as a JSON string to the eventBus
+        eventBus.post(JSON.toJSONString(payOrder));
+    }
+
+    @Override
+    public List<String> queryNoPayNotifyOrder() {
+        return orderDao.queryNoPayNotifyOrder();
+    }
+
+    @Override
+    public List<String> queryTimeoutCloseOrderList() {
+        return orderDao.queryTimeoutCloseOrderList();
+    }
+
+    @Override
+    public boolean changeOrderClose(String orderId) {
+        return orderDao.changeOrderClose(orderId);
     }
 
     private PayOrder doPrePayOrder(String productId, String productName,
